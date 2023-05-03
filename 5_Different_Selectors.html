@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style type="text/css">
+      /* Selecting id  */
+      #section1 {
+        background-color: black;
+      }
+
+      /* Selecting class */
+      .section2 {
+        background-color: green;
+      }
+
+      /* Selecting h1 tag inside of section1 class */
+      .section2 h1 {
+        color: yellow;
+        text-align: center;
+      }
+
+      /* Selecting h1 tag inside of an id */
+      #section1 h1 {
+        color: wheat;
+        text-align: center;
+      }
+
+      /* 
+      Univarsal selector '*' 
+      Used to select all the elements of the page
+      Useful for univarsal margin or padding
+      */
+
+      * {
+        padding: 10px;
+      }
+
+       /* Applying CSS multiple elements AKA Grouping  */
+       /* In the below exampel same CSS will apply for multiple emements */
+
+       h5 ,h6 {
+        color: chocolate;
+       }
+
+       /* Combinator */
+       /* 1. Descendant selector */
+       /* All 'p' if it's inside a 'div' */
+       div p {
+        color: red;
+       }
+
+       /* 2. Child selector */
+       /* All 'p' if it's a child of a 'div' */
+       div > p {
+        color: red;
+       }
+
+       /* 3. Adjacent sibling selector */
+       /* All 'p' if it's inside a and first/immediate child 'div' */
+       div + p {
+        color: red;
+       }
+
+       /* 4. Genearal sibling selector */
+       /* All tags who are after 'div' tags */
+       div ~ p {
+        color: red;
+       }
+
+    </style>
+  </head>
+  <body>
+    <!-- section1 id -->
+    <section id="section1">
+      <h1>Cats</h1>
+    </section>
+
+    <!-- section1 class -->
+    <section class="section2">
+      <h1>Dogs</h1>
+    </section>
+
+    <!-- h5 -->
+    <h5>I am h5</h5>
+
+    <!-- h6 -->
+    <h6>I am h6</h6>
+
+  </body>
+</html>
