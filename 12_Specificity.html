@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* 
+        Specificity defines the priority. We can calculate. 
+        By combination (not sum) of three terms
+            1. Number id ids
+            2. Number of classes
+            3. Number of elements
+        Value is more = Priority is more
+        If multiple value is same proity is the first < last
+         */
+
+      /* Here: id = 0, class = 0, elememt = 1 So, Specificity = 001 */
+      h1 {
+        color: blue;
+      }
+
+      /* Here: id = 0, class = 1, elememt = 0 So, Specificity = 010 */
+      .title {
+        color: red;
+      }
+
+      /* Here: id = 1, class = 0, elememt = 0 So, Specificity = 100 */
+      #heading {
+        color: peru;
+      }
+
+      /* 
+      More: Inline CSS Specificity: 1000
+      Important: 10000
+      */
+    </style>
+  </head>
+  <body>
+    <h1 class="title" id="heading">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, facere.
+    </h1>
+  </body>
+</html>
