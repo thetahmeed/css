@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* Pseudo class ':'. Apply to the full element */
+      /* hover */
+      h1:hover {
+        color: purple;
+        font-weight: bold;
+      }
+
+      /* focus */
+      input:focus {
+        width: 400px;
+      }
+
+      /* Only odd child */
+      /* We can use n, n+1, n+2, even stc as well */
+      table:nth-child(odd) {
+        color: red;
+      }
+
+      /* Pseudo element '::'. Apply to a fraction of an element */
+      p::first-letter {
+        font-size: 150%;
+      }
+
+      p::after {
+        content: "}";
+      }
+
+      p::before {
+        content: "{";
+      }
+
+      p::first-line {
+        color: brown;
+      }
+
+      /* All marker like dot in unorder list will affected */
+      ::marker {
+        color: red;
+      }
+
+      /* More: :first-of-type, ::selection, ::placeholder */
+    </style>
+  </head>
+  <body>
+    <h1>Bring mouse pointer to me!</h1>
+
+    <input type="text" name="name" id="name" />
+
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
+      blanditiis unde quae reiciendis laborum explicabo molestias quam delectus?
+      Magnam sunt possimus quae hic esse culpa aperiam porro vel mollitia
+      dolore. Corrupti aspernatur, nihil facere accusantium cumque eos! Quas
+      iure atque quaerat neque? Quis beatae obcaecati quidem, deleniti minima
+      facilis quasi?
+    </p>
+
+    <div class="demo">
+
+    </div>
+
+  </body>
+</html>
