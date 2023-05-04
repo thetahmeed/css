@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FEF2F4;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background-color: aquamarine;
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 18px;
+}
+
+/* Header */
+#dp {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+#main-hr {
+    margin: 20px 0;
+    border: 2px solid black;
+    border-bottom: none;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.header-left {
+    float: left;
+    width: 50%;
+
+}
+
+.header-right {
+    float: left;
+    width: 50%;
+    text-align: right;
+}
+
+/* Footer */
+#bottom-container {
+    background-color: #393646;
+    text-align: center;
+    color: white;
+    padding: 8px;
+    border-radius: 12px;
+}
+
+/* Summery */
+.section-left {
+    width: 30%;
+    float: left;
+}
+
+.section-right {
+    width: 70%;
+    float: left;
+    text-align: justify;
+}
+
+/* contact form */
+.contact-name-email,
+.contact-message {
+    width: 50%;
+    float: left;
+}
+
+
+
+.links {
+    margin: 10px 0;
+}
+
+#bottom-container a {
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+#bottom-container a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* clear float */
+.clear-float {
+    clear: both;
+}
+
+/* order list item spacing */
+li {
+    margin-bottom: 8px;
+}
+
+/* table */
+
+table {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 8px;
+}
+
+th {
+    text-align: left;
+}
+
+progress {
+    border-radius: 2px;
+    height: 8px;
+    width: 300px;
+}
+
+progress::-webkit-progress-bar {
+    background-color: white;
+    border-radius: 4px;
+}
+
+progress::-webkit-progress-value {
+    background-color: black;
+    border-radius: 4px;
+}
+
+input {
+    padding: 8px;
+    border-radius: 13px;
+    height: 30px;
+    width: 90%;
+}
+
+#message {
+    padding: 8px;
+    border-radius: 13px;
+    width: 90%;
+    height: 105px;
+}
+
+.message-send-button {
+    text-align: end;
+    padding-right: 30px;
+} 
+
+button {
+    border-radius: 12px;
+    padding: 8px;
+}
+
+#map {
+    border-radius: 12px;
+}
