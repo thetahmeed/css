@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Positions -->
+    <!-- 
+        1. Static
+        2. Relative
+        3. Fixed
+        4. Absolate 
+     -->
+
+    <style>
+      .box {
+        border-radius: 8px;
+        border: 3px solid red;
+        padding: 8px;
+        width: 400px;
+        height: 200px;
+        text-align: center;
+      }
+
+      .box2 {
+        border-radius: 8px;
+        border: 3px solid green;
+        padding: 8px;
+        width: 200px;
+        text-align: center;
+      }
+
+      .static-div {
+        /* Default */
+        position: static;
+      }
+
+      .relative-div {
+        position: relative;
+        left: 25px;
+        top: 25px;
+      }
+
+      .fixed-div {
+        position: fixed;
+        left: 460px;
+        top: 265px;
+      }
+
+      .absulate-div {
+        position: absolute;
+        left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="static-div box">
+      <h1>Static</h1>
+    </div>
+
+    <br />
+
+    <div class="relative-div box">
+      <h1>Relative</h1>
+
+      <div class="absulate-div box2">Absulate</div>
+    </div>
+
+    <br />
+
+    <div class="fixed-div box">
+      <h1>Fixed</h1>
+    </div>
+
+    <br />
+
+    <p>
+      Facere iusto nulla, tempora eveniet culpa voluptatum sapiente incidunt ab
+      veniam ipsam quidem vitae similique id, repellendus est quos dignissimos
+      aspernatur repudiandae, exercitationem temporibus! Molestias consequatur
+      voluptates, molestiae animi facere dignissimos iste autem placeat quod
+      eligendi quibusdam veritatis provident totam voluptatum ipsa obcaecati!
+      Provident autem illum quaerat aut. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Quas exercitationem eligendi itaque delectus quia minus
+      <br><br>
+      minima at, suscipit consequatur ipsam commodi, molestiae, amet nisi eaque
+      libero veritatis explicabo vero. Eos, odio. Saepe, recusandae? Rem ipsam
+      nisi quisquam tenetur a id explicabo, dolore voluptas alias eligendi
+      accusantium maiores ipsum pariatur sed repudiandae placeat veniam, modi
+      eos laborum facilis quidem similique? Laboriosam, cumque nisi consequuntur
+      ipsum at, libero, mollitia maxime id quam enim provident laborum
+      quibusdam. Commodi cumque ullam quo saepe, consectetur ea, non delectus
+      adipisci numquam, recusandae voluptate dolorum iusto quis laboriosam
+      pariatur mollitia? Deleniti, sit fuga repellat nisi pariatur nihil.
+    </p>
+  </body>
+</html>
