@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+        border-radius: 8px;
+        border: 3px solid red;
+        padding: 8px;
+        width: 400px;
+        height: 200px;
+        text-align: center;
+      }
+
+      /* Overflow */
+      .overflow-div{
+        /* overflow: visible;  */
+        /* overflow: hidden; */
+        /* overflow: scroll; */
+        overflow: auto; /* visible+scroll */
+      }
+
+      .tooltip {
+        position: relative;
+      }
+
+      .tooltip-text {
+        padding: 4px;
+        border-radius: 8px;
+        background-color: blanchedalmond;
+        position: absolute;
+        top: 25px;
+        left: 50px;
+        /* Top of all layer */
+        z-index: 1; 
+        /* Iniotially hidden */
+        visibility: hidden;
+      }
+
+      .tooltip:hover .tooltip-text {
+        visibility: visible;
+      }
+
+    </style>
+</head>
+<body>
+    <div class="overflow-div box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi voluptatem cupiditate quod eveniet nemo eum necessitatibus recusandae eius adipisci aperiam nesciunt corrupti voluptas similique, officiis aut rerum, amet officia perspiciatis et suscipit quaerat corporis. Fugit quas autem optio reprehenderit hic. Dolorum, natus recusandae? Ducimus atque ipsa reprehenderit similique, ullam perferendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem saepe pariatur ab ipsam eius praesentium asperiores tempore culpa reprehenderit molestiae repellendus deleniti dolorem adipisci, minus quia sapiente modi impedit iure numquam, molestias quod doloremque beatae eos. Ipsa quo rem necessitatibus quia, nulla impedit officia ducimus doloremque porro? Nesciunt, esse asperiores!</p>
+    </div>
+
+    <br>
+
+    <div class="tooltip">
+        <a href="https://www.tiktok.com/@tahmeedul">Don't click this link!</a>
+        <span class="tooltip-text">It's a tiktok link!!!</span>
+    </div>
+</body>
+</html>
