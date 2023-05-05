@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        :root {
+            --primary-color : red;
+            --secondary-color : green;
+        }
+
+        .div1{
+            background-color: var(--primary-color);
+        }
+        .div2{
+            background-color: var(--secondary-color);
+        }
+        .div3{
+            /* Old broeser doesn't support variables so we can put an initial color as well */
+            background-color: blue;
+            /* We can use a fallbaacck/default value as well */
+            background-color: var(--primary-color, brown);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="div1">
+        <h1>Hello</h1>
+    </div>
+    
+    <div class="div2">
+        <h1>World!</h1>
+    </div>
+
+    <div class="div3">
+        <h1>🙄</h1>
+    </div>
+</body>
+</html>
