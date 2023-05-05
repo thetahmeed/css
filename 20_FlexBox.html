@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    /* Flex is 1D, Either row or column */
+    .container {
+      display: flex;
+      background-color: bisque;
+      height: 300px;
+
+      /* If there is no room then missing item will be on bottom */
+      /* flex-wrap: wrap; */
+
+      /* Direction: row/column or with reverse */
+      /* flex-direction: column; */
+
+      /* wrap and direction together */
+      flex-flow: wrap row;
+
+      /* Align content [Horizontal/May be Main axis] */
+      justify-content: center;
+
+      /* Align content [Virtical/May be Cross axis] */
+      align-items: center;
+    }
+
+    /* Those 'div' are inside the container */
+    .container > div {
+        height: 40px;
+      width: 80px;
+      background-color: palegreen;
+      padding: 8px;
+      margin: 8px;
+      font-size: 18px;
+    }
+
+    /* For the child we can use order to maintain the order */
+    /* and for their initial heigh/width by 'flex-basic' */
+  </style>
+
+  <body>
+    <div class="container">
+      <div class="div1">Div1</div>
+      <div class="div2">Div2</div>
+      <div class="div3">Div3</div>
+      <div class="div4">Div4</div>
+      <div class="div5">Div5</div>
+      <div class="div6">Div6</div>
+      <div class="div7">Div7</div>
+    </div>
+  </body>
+</html>
