@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* TextShadow */
+      .text {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: purple;
+        /* x-axis, y-axis, blur, color */
+        text-shadow: 2px 2px 2px black;
+      }
+
+      /* BoxShadow */
+      .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: olivedrab;
+        margin: 10px;
+        height: 300px;
+        width: 300px;
+        box-shadow: 2px 2px 2px black;
+      }
+
+      .text2 {
+        text-align: center;
+        margin: 0, auto;
+      }
+
+      /* More: We can use (-) negetive x and y values as well. */
+      /* To implement inner shadow we can use 'inset' */
+
+    </style>
+  </head>
+  <body>
+    <h1 class="text">TextShadow</h1>
+
+    <br />
+
+    <div class="box">
+        <h1 class="text2">BoxShadow</h1>
+    </div>
+  </body>
+</html>
