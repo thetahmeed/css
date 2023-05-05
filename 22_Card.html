@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            padding: 8px;
+            background-color: honeydew;
+        }
+        /* Image style */
+        img {
+            height: 120px;
+            width: 200px;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+
+        .card-holder{
+            display: flex;
+            flex-flow: wrap row;
+        }
+
+        .card {
+            width: 200px;
+            border-radius: 12px;
+            background-color: lightskyblue;
+            padding: 8px;
+            margin: 8px;
+            /* border: 0.1px solid black; */
+            box-shadow: 1px 1px 3px grey;
+        }
+
+        .card:hover {
+            box-shadow: 2px 2px 5px red;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card-holder">
+        <div class="card">
+            <img src="https://picsum.photos/536/354" alt="image">
+            <h3>Lorem ipsum dolor sit</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error porro maxime ipsum ut, cupiditate explicabo.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/536/354" alt="image">
+            <h3>Lorem ipsum dolor sit</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error porro maxime ipsum ut, cupiditate explicabo.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/536/354" alt="image">
+            <h3>Lorem ipsum dolor sit</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error porro maxime ipsum ut, cupiditate explicabo.</p>
+        </div>
+    </div>
+</body>
+</html>
