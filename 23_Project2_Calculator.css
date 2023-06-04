@@ -1,3 +1,77 @@
+/* Final try */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    color: darkslateblue;
+}
+
+.display {
+    margin: 0 auto;
+
+    text-align: center;
+    margin-top: 8px;
+}
+
+#text-display{
+    width: 316px;
+    height: 70px;
+    font-size: 32px;
+    text-align: right;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.calculator {
+    margin: 0 auto;
+    width: 320px;
+    box-shadow: 0 2px 2px 0 grey;
+    transition: 0.3s;
+    font-size: 0;
+}
+
+.btn {
+    width: 80px;
+    height: 60px;
+    background-color: cornflowerblue;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: cyan;
+}
+
+.yellow-button {
+    background-color: yellowgreen;
+}
+
+.purple-button {
+    background-color: purple;
+}
+
+.calculator:hover {
+    box-shadow: 0 6px 6px 0 grey;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Initial try */
+/*
 body {
     padding: 0px;
     margin: 0px;
@@ -54,4 +128,4 @@ h1 {
     background-color: darkcyan;
     color: black;
     box-shadow: 1px 0px 6px black;
-}
+}*/
