@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .grid-container div{
+            background-color: aquamarine;
+            padding: 8px;
+
+            border-radius: 12px;
+        }
+
+        /* Grid */
+        .grid-container {
+            display: grid;
+            
+            /* 3 columns, same size */
+            /* grid-template-columns: auto auto auto; */
+
+            /* 3 colunma, first one is 200px then even size */
+            grid-template-columns: 200px auto auto;
+
+            /* Or we can use fractions like Flex on flutter */
+            /* grid-template-columns: 2fr 1fr 1fr 1fr; */
+
+            /* We can use repeat function as well */
+            /* 1fr for 5 times */
+            /* grid-template-columns: repeat(5, 1fr); */
+
+            /* No shrink if width less then 100px */
+            /* Responsive: */
+            grid-template-columns: repeat(auto-fill, min-max(200px, 1fr));
+
+            /* First row height 100px */
+            grid-template-rows: 100px;
+            /* row-gap: 2px; */
+            /* column-gap: 2px; */
+            /* both gaps at ones */
+            gap: 5px;
+        }
+
+        /* Combine 2 column into one */
+        .single-section1{
+            /* grid-column-start: 1;
+            grid-column-end: 3; */
+            /* Or both at same line*/
+            grid-column: 1/3;
+        }
+        .single-section7{
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+
+        .single-section9{
+            /* Start from 2 */
+            grid-column-start: 2;
+            /* Takes space of 2 columns */
+            grid-column-end: span 2; 
+        }
+
+        /* Same in row */
+        .single-section10{
+            grid-row-start: 5;
+            grid-row-end: span 2;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- Flexbox layout was 1D (Only row or column) -->
+    <!-- Grid layout is 2D (row and column both) -->
+
+    <div class="grid-container">
+        <div class="single-section1">1</div>
+        <div class="single-section2">2</div>
+        <div class="single-section3">3</div>
+        <div class="single-section4">4</div>
+        <div class="single-section5">5</div>
+        <div class="single-section6">6</div>
+        <div class="single-section7">7</div>
+        <div class="single-section8">8</div>
+        <div class="single-section9">9</div>
+        <div class="single-section10">10</div>
+        <div class="single-section11">11</div>
+        <div class="single-section12">12</div>
+        <div class="single-section13">13</div>
+        <div class="single-section14">14</div>
+    </div>
+</body>
+</html>
