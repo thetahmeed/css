@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .text {
+        background-color: aqua;
+        padding: 2px;
+
+        /* 1. Text on center. All inline proparty will be on center */
+        text-align: center;
+      }
+
+      h1 {
+        background-color: cadetblue;
+        width: 300px;
+
+        /* 2. Whole h1. If we use width */
+        margin: 0 auto;
+      }
+
+      /* Using flex layout */
+      .div1 {
+        padding: 8px;
+        background-color: aquamarine;
+        height: 300px;
+
+        /* 3. Horizontally center */
+        display: flex;
+        justify-content: center;
+
+        /* 4. Virtacaclly center */
+        align-items: center;
+      }
+
+      .div2 {
+        padding: 8px;
+        background-color: blanchedalmond;
+        width: 250px;
+      }
+
+      /* Using relative position */
+      .div3 {
+        padding: 8px;
+        background-color: darkseagreen;
+        height: 300px;
+
+        position: relative;
+
+      }
+
+      .div4 {
+        padding: 8px;
+        background-color: blanchedalmond;
+        width: 250px;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="text">
+      <h1>Center text</h1>
+    </div>
+
+    <br />
+
+    <div class="div1">
+      <div class="div2">
+        <h2>Center using Flex layout</h2>
+      </div>
+    </div>
+
+    <div class="div3">
+      <div class="div4">
+        <h2>Center using Relative position</h2>
+      </div>
+    </div>
+  </body>
+</html>
